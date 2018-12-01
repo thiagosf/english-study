@@ -1,0 +1,525 @@
+{
+  "metadata": {
+    "provider": "Oxford University Press"
+  },
+  "results": [
+    {
+      "id": "red",
+      "language": "en",
+      "lexicalEntries": [
+        {
+          "derivatives": [
+            {
+              "id": "reddy",
+              "text": "reddy"
+            },
+            {
+              "id": "redly",
+              "text": "redly"
+            }
+          ],
+          "entries": [
+            {
+              "etymologies": [
+                "Old English rēad, of Germanic origin; related to Dutch rood and German rot, from an Indo-European root shared by Latin rufus, ruber, Greek eruthros, and Sanskrit rudhira ‘red’"
+              ],
+              "grammaticalFeatures": [
+                {
+                  "text": "Positive",
+                  "type": "Degree"
+                }
+              ],
+              "homographNumber": "000",
+              "senses": [
+                {
+                  "definitions": [
+                    "of a colour at the end of the spectrum next to orange and opposite violet, as of blood, fire, or rubies"
+                  ],
+                  "examples": [
+                    {
+                      "text": "the sky was turning red outside"
+                    },
+                    {
+                      "text": "her red lips"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.008",
+                  "short_definitions": [
+                    "of colour at end of spectrum next to orange and opposite violet, as of blood or rubies"
+                  ],
+                  "subsenses": [
+                    {
+                      "definitions": [
+                        "(of a person or their face) flushed or rosy, especially with embarrassment, anger, or heat"
+                      ],
+                      "examples": [
+                        {
+                          "text": "he went bright red"
+                        },
+                        {
+                          "text": "there were some red faces in headquarters"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.012",
+                      "short_definitions": [
+                        "flushed or rosy"
+                      ],
+                      "thesaurusLinks": [
+                        {
+                          "entry_id": "red",
+                          "sense_id": "t_en_gb0012232.002"
+                        }
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "(of a person's eyes) bloodshot or having pink rims, especially with tiredness or crying"
+                      ],
+                      "examples": [
+                        {
+                          "text": "her eyes were red and swollen"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.013",
+                      "short_definitions": [
+                        "bloodshot or having pink rims"
+                      ],
+                      "thesaurusLinks": [
+                        {
+                          "entry_id": "red",
+                          "sense_id": "t_en_gb0012232.003"
+                        }
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "(of hair or fur) of a reddish-brown or orange-brown colour"
+                      ],
+                      "examples": [
+                        {
+                          "text": "his hair was red"
+                        },
+                        {
+                          "text": "her long, red hair"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.014",
+                      "short_definitions": [
+                        "of reddish-brown colour"
+                      ],
+                      "thesaurusLinks": [
+                        {
+                          "entry_id": "red",
+                          "sense_id": "t_en_gb0012232.004"
+                        }
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "(of a people) having reddish skin."
+                      ],
+                      "id": "m_en_gbus0852700.015",
+                      "registers": [
+                        "dated",
+                        "offensive"
+                      ],
+                      "short_definitions": [
+                        "having reddish skin"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "of or denoting the suits hearts and diamonds in a pack of cards"
+                      ],
+                      "domains": [
+                        "Cards"
+                      ],
+                      "examples": [
+                        {
+                          "text": "a red queen"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.017",
+                      "short_definitions": [
+                        "of suits hearts and diamonds in pack of cards"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "(of wine) made from dark grapes and coloured by their skins"
+                      ],
+                      "domains": [
+                        "Wine"
+                      ],
+                      "examples": [
+                        {
+                          "text": "a glass of red wine"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.018",
+                      "short_definitions": [
+                        "(of wine) made from dark grapes and coloured by their skins"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "denoting a red light or flag used as a signal to stop."
+                      ],
+                      "id": "m_en_gbus0852700.019",
+                      "short_definitions": [
+                        "denoting red light or flag used as signal to stop"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "used to denote something forbidden, dangerous, or urgent"
+                      ],
+                      "examples": [
+                        {
+                          "text": "the force went on red alert"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.020",
+                      "short_definitions": [
+                        "used to denote something forbidden or urgent"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "(of a ski run) of the second-highest level of difficulty, as indicated by red markers positioned along it."
+                      ],
+                      "domains": [
+                        "Skiing"
+                      ],
+                      "id": "m_en_gbus0852700.021",
+                      "short_definitions": [
+                        "(of ski run) of second-highest level of difficulty, as indicated by red markers"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "denoting one of three colours of quark."
+                      ],
+                      "domains": [
+                        "Physics"
+                      ],
+                      "id": "m_en_gbus0852700.022",
+                      "short_definitions": [
+                        "denoting one of three colours of quark"
+                      ]
+                    }
+                  ],
+                  "thesaurusLinks": [
+                    {
+                      "entry_id": "red",
+                      "sense_id": "t_en_gb0012232.001"
+                    }
+                  ]
+                },
+                {
+                  "crossReferences": [
+                    {
+                      "id": "white",
+                      "text": "white",
+                      "type": "related"
+                    }
+                  ],
+                  "definitions": [
+                    "communist or socialist (used especially during the Cold War with reference to the Soviet Union)"
+                  ],
+                  "domains": [
+                    "Politics"
+                  ],
+                  "examples": [
+                    {
+                      "text": "the era of nuclear anxiety, the red scare and covert CIA plots"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.024",
+                  "registers": [
+                    "derogatory",
+                    "informal"
+                  ],
+                  "short_definitions": [
+                    "communist or socialist"
+                  ],
+                  "variantForms": [
+                    {
+                      "text": "Red"
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "involving bloodshed or violence"
+                  ],
+                  "examples": [
+                    {
+                      "text": "red battle stamps his foot and nations feel the shock"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.028",
+                  "registers": [
+                    "literary",
+                    "archaic"
+                  ],
+                  "short_definitions": [
+                    "involving bloodshed or violence"
+                  ]
+                },
+                {
+                  "crossReferenceMarkers": [
+                    "Contrasted with school"
+                  ],
+                  "crossReferences": [
+                    {
+                      "id": "school",
+                      "text": "school",
+                      "type": "related"
+                    },
+                    {
+                      "id": "school",
+                      "text": "school",
+                      "type": "related"
+                    }
+                  ],
+                  "definitions": [
+                    "(of a Xhosa) coming from a traditional tribal culture"
+                  ],
+                  "examples": [
+                    {
+                      "text": "a red Xhosa wife spends several years in her mother-in-law's homestead"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.031",
+                  "regions": [
+                    "South African"
+                  ],
+                  "short_definitions": [
+                    "coming from traditional tribal culture"
+                  ],
+                  "variantForms": [
+                    {
+                      "text": "red-blanket"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "language": "en",
+          "lexicalCategory": "Adjective",
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/red_gb_5.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "rɛd"
+            }
+          ],
+          "text": "red"
+        },
+        {
+          "derivatives": [
+            {
+              "id": "reddy",
+              "text": "reddy"
+            },
+            {
+              "id": "redly",
+              "text": "redly"
+            }
+          ],
+          "entries": [
+            {
+              "grammaticalFeatures": [
+                {
+                  "text": "Singular",
+                  "type": "Number"
+                }
+              ],
+              "homographNumber": "001",
+              "senses": [
+                {
+                  "definitions": [
+                    "red colour or pigment"
+                  ],
+                  "examples": [
+                    {
+                      "text": "their work is marked in red by the teacher"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.036",
+                  "notes": [
+                    {
+                      "text": "mass noun",
+                      "type": "grammaticalNote"
+                    }
+                  ],
+                  "short_definitions": [
+                    "red colour or pigment"
+                  ],
+                  "subsenses": [
+                    {
+                      "definitions": [
+                        "red clothes or material"
+                      ],
+                      "examples": [
+                        {
+                          "text": "she could not wear red"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.039",
+                      "short_definitions": [
+                        "red clothes or material"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "a red thing"
+                  ],
+                  "examples": [
+                    {
+                      "text": "which dress - the black or the red?"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.042",
+                  "short_definitions": [
+                    "red thing"
+                  ],
+                  "subsenses": [
+                    {
+                      "definitions": [
+                        "a red wine"
+                      ],
+                      "domains": [
+                        "Wine"
+                      ],
+                      "examples": [
+                        {
+                          "text": "good Italian reds at affordable prices"
+                        },
+                        {
+                          "text": "a bottle of red"
+                        }
+                      ],
+                      "id": "m_en_gbus0852700.043",
+                      "short_definitions": [
+                        "red wine"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "a red ball in snooker or billiards."
+                      ],
+                      "domains": [
+                        "Billiards"
+                      ],
+                      "id": "m_en_gbus0852700.044",
+                      "short_definitions": [
+                        "red ball in snooker or billiards"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "a red light."
+                      ],
+                      "domains": [
+                        "Motoring"
+                      ],
+                      "id": "m_en_gbus0852700.045",
+                      "short_definitions": [
+                        "red light"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "a communist or socialist."
+                  ],
+                  "domains": [
+                    "Politics"
+                  ],
+                  "id": "m_en_gbus0852700.047",
+                  "registers": [
+                    "derogatory",
+                    "informal"
+                  ],
+                  "short_definitions": [
+                    "communist or socialist"
+                  ],
+                  "thesaurusLinks": [
+                    {
+                      "entry_id": "red",
+                      "sense_id": "t_en_gb0012232.005"
+                    }
+                  ],
+                  "variantForms": [
+                    {
+                      "text": "Red"
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "the situation of owing money to a bank or making a loss in a business operation"
+                  ],
+                  "domains": [
+                    "Commerce"
+                  ],
+                  "examples": [
+                    {
+                      "text": "the company was £4 million in the red"
+                    },
+                    {
+                      "text": "small declines in revenue can soon send an airline plunging into the red"
+                    },
+                    {
+                      "text": "moving the health authority out of the red will be a huge challenge"
+                    }
+                  ],
+                  "id": "m_en_gbus0852700.050",
+                  "notes": [
+                    {
+                      "text": "\"the red\"",
+                      "type": "wordFormNote"
+                    }
+                  ],
+                  "short_definitions": [
+                    "situation of owing money to bank or making loss in business"
+                  ],
+                  "thesaurusLinks": [
+                    {
+                      "entry_id": "in_the_red",
+                      "sense_id": "t_en_gb0012232.006"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "language": "en",
+          "lexicalCategory": "Noun",
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/red_gb_5.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "rɛd"
+            }
+          ],
+          "text": "red"
+        }
+      ],
+      "type": "headword",
+      "word": "red"
+    }
+  ]
+}

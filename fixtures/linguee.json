@@ -1,0 +1,369 @@
+{
+  "src_lang": "en",
+  "dst_lang": "pt",
+  "query": "red",
+  "correct_query": "red",
+  "exact_matches": [
+    {
+      "featured": true,
+      "wt": 300,
+      "lemma_id": "EN:red10733",
+      "text": "red",
+      "word_type": {
+        "pos": "adjective"
+      },
+      "audio_links": [
+        {
+          "url_part": "EN_US/bd/bda9643ac6601722a28f238714274da4-300",
+          "lang": "American English"
+        },
+        {
+          "url_part": "EN_UK/bd/bda9643ac6601722a28f238714274da4-300",
+          "lang": "British English"
+        }
+      ],
+      "forms": null,
+      "translations": [
+        {
+          "featured": true,
+          "text": "vermelho",
+          "bid": "10007710774",
+          "lemma_id": "PT:vermelho49663",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [
+            {
+              "url_part": "PT_PT/10/10eeda244085bfe6901c916924ea5877-0",
+              "lang": "European Portuguese"
+            },
+            {
+              "url_part": "PT_BR/10/10eeda244085bfe6901c916924ea5877-0",
+              "lang": "Brazilian Portuguese"
+            }
+          ],
+          "examples": [
+            {
+              "source": "I decorated the present with a beautiful red ribbon.",
+              "target": "Enfeitei o presente com uma linda fita vermelha."
+            }
+          ]
+        },
+        {
+          "featured": true,
+          "text": "vermelha",
+          "bid": "10004627162",
+          "lemma_id": "PT:vermelha29598",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [],
+          "examples": [
+            {
+              "source": "I decorated the present with a beautiful red ribbon.",
+              "target": "Enfeitei o presente com uma linda fita vermelha."
+            }
+          ]
+        },
+        {
+          "featured": true,
+          "text": "tinto",
+          "bid": "10000974887",
+          "lemma_id": "PT:tinto46322",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [
+            {
+              "url_part": "PT_BR/3f/3fa6b1ff29aa0b4f9b9c59c676846829-300",
+              "lang": "Brazilian Portuguese"
+            },
+            {
+              "url_part": "PT_PT/3f/3fa6b1ff29aa0b4f9b9c59c676846829-300",
+              "lang": "European Portuguese"
+            }
+          ],
+          "examples": [
+            {
+              "source": "I stained my shirt with red wine.",
+              "target": "Eu manchei minha camisa com vinho tinto."
+            }
+          ]
+        },
+        {
+          "featured": false,
+          "text": "vermelhas",
+          "bid": "10003186451",
+          "lemma_id": "PT:vermelhas64385",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [],
+          "examples": []
+        },
+        {
+          "featured": false,
+          "text": "avermelhado",
+          "bid": "10004692254",
+          "lemma_id": "PT:avermelhado48459",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [
+            {
+              "url_part": "PT_BR/ca/caf667e771607c137dbb31538ef14118-300",
+              "lang": "Brazilian Portuguese"
+            },
+            {
+              "url_part": "PT_PT/ca/caf667e771607c137dbb31538ef14118-300",
+              "lang": "European Portuguese"
+            }
+          ],
+          "examples": []
+        },
+        {
+          "featured": false,
+          "text": "encarnado",
+          "bid": "10004692063",
+          "lemma_id": "PT:encarnado51566",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [
+            {
+              "url_part": "PT_BR/a1/a1464b09a8d8e99b96b8c92a5ad7efc9-300",
+              "lang": "Brazilian Portuguese"
+            },
+            {
+              "url_part": "PT_PT/a1/a1464b09a8d8e99b96b8c92a5ad7efc9-300",
+              "lang": "European Portuguese"
+            }
+          ],
+          "examples": []
+        },
+        {
+          "featured": false,
+          "text": "ruivo",
+          "bid": "10000939636",
+          "lemma_id": "PT:ruivo59984",
+          "word_type": {
+            "pos": "adjective"
+          },
+          "audio_link": [
+            {
+              "url_part": "PT_BR/27/27279f707a8076db6a36f22dfa43e6e3-300",
+              "lang": "Brazilian Portuguese"
+            },
+            {
+              "url_part": "PT_PT/27/27279f707a8076db6a36f22dfa43e6e3-300",
+              "lang": "European Portuguese"
+            }
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "featured": true,
+      "wt": 101,
+      "lemma_id": "EN:red10733",
+      "text": "red",
+      "word_type": {
+        "pos": "noun"
+      },
+      "audio_links": [
+        {
+          "url_part": "EN_US/bd/bda9643ac6601722a28f238714274da4-101",
+          "lang": "American English"
+        },
+        {
+          "url_part": "EN_UK/bd/bda9643ac6601722a28f238714274da4-101",
+          "lang": "British English"
+        }
+      ],
+      "forms": null,
+      "translations": [
+        {
+          "featured": true,
+          "text": "vermelho",
+          "bid": "10000935988",
+          "lemma_id": "PT:vermelho49663",
+          "word_type": {
+            "pos": "noun",
+            "gender": "masculine"
+          },
+          "audio_link": [
+            {
+              "url_part": "PT_BR/10/10eeda244085bfe6901c916924ea5877-106",
+              "lang": "Brazilian Portuguese"
+            },
+            {
+              "url_part": "PT_PT/10/10eeda244085bfe6901c916924ea5877-106",
+              "lang": "European Portuguese"
+            }
+          ],
+          "examples": []
+        }
+      ]
+    }
+  ],
+  "inexact_matches": null,
+  "real_examples": [
+    {
+      "id": "",
+      "src": "I hope that these two red lines will make it [...] to the finish line.",
+      "dst": "Espero que estas duas limitações consigam chegar [...] à meta final.",
+      "url": "http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+CRE+20090423+ITEMS+DOC+XML+V0//EN&amp;language=EN"
+    },
+    {
+      "id": "",
+      "src": "The original with a red watermark over [...] black text.",
+      "dst": "O original com uma marca d'água sobre [...] o texto preto.",
+      "url": "http://www.xeroxscanner.com/downloads/Manuals/DM152/DM152_Guide.OT4.EN.pdf"
+    },
+    {
+      "id": "",
+      "src": "Ojibwe Nation Chairman Floyd Jourdain Jr. recently told the Red Lake Ojibwe Nation: \"Our Ojibwe language is officially in a state of crisis.",
+      "dst": "O líder da nação ojibwe, Floyd Jourdain Jr., disse recentemente à nação ojibwe de Red Lake: \"Nossa língua ojibwe está oficialmente em situação de crise.",
+      "url": "http://www.america.gov/media/pdf/ejs/0609.pdf"
+    },
+    {
+      "id": "",
+      "src": "This is a plant [...] the leaves of which are red as blood on the underside, [...] and she took these leaves and with them she cleaned the child.",
+      "dst": "A parte de baixo das [...] folhas desta planta é vermelha como o sangue, e ela [...] pegou nestas folhas e com elas limpou a criança.",
+      "url": "http://www.ayahuasca-info.nl/myths/"
+    },
+    {
+      "id": "",
+      "src": "Coach Silas, without the backing of former executive director Zico was fired by the red and black board.",
+      "dst": "O técnico Silas, sem o respaldo do ex-diretor executivo Zico, acabou demitido pela diretoria rubro-negra.",
+      "url": "http://abaffutebol.com.br/english/noticia.php?id=2564"
+    },
+    {
+      "id": "",
+      "src": "Malawi Red Cross ensured that all [...] organizations assisting refugees were invited to monthly meetings where each one of them [...] was asked to report what it has achieved that month and what it is planning to do.",
+      "dst": "A Cruz Vermelha Malauí se certificou [...] de que foram convidadas todas as organizações que ajudam refugiados para as reuniões [...] mensais onde pediu-se a cada uma delas que informasse sobre o que ela realizara durante aquele mês e o que estava planejando fazer.",
+      "url": "http://policy-powertools.org/Tools/Ensuring/docs/local_government_accountability_tool_english.pdf"
+    },
+    {
+      "id": "",
+      "src": "Red-eye reduction is used when taking photographs [...] of people or animals in low-light conditions.",
+      "dst": "A redução de olhos vermelhos é usada quando [...] se realizam fotografias de pessoas ou animais em situações de fraca luminosidade.",
+      "url": "http://ca.konicaminolta.com/support/manuals/digital_cameras/dimage-a/dimage_a2/D_A2_E.pdf"
+    },
+    {
+      "id": "",
+      "src": "The RGB color model is an additive process that uses the [...] primary colors of light: red, green, and blue.",
+      "dst": "O modelo de cor RGB é um processo cumulativo que usa as cores [...] primárias da luz. vermelho, verde e azul.",
+      "url": "http://ca.konicaminolta.com/support/manuals/scanners/dimage-scanners/scan_dual_III/DS_DUAL3_E.pdf"
+    },
+    {
+      "id": "",
+      "src": "The scaling disappeared almost [...] entirely and the red color changed to [...] a light pink, which is no longer annoying or ostentatious.",
+      "dst": "A descamação desapareceu quase [...] totalmente e a cor vermelha passou a ser [...] um rosa claro, o que não é mais irritante ou impactante.",
+      "url": "http://www.equilac.com/en/psoriasis/"
+    },
+    {
+      "id": "",
+      "src": "The cap consists of 2 [...] parts: the body that is red, and a central disc that [...] can come in one of the 4 colors of the table.",
+      "dst": "A Tecla é formada por 2 partes: o [...] Corpo, que é sempre Vermelho, e um Disco Central, [...] que pode ter uma das 4 cores da tabela.",
+      "url": "http://www.kap.com.br/pdf/en/kp_c_en.pdf"
+    },
+    {
+      "id": "",
+      "src": "If the controller detects [...] a malfunction, the red light flashes and the [...] warning symbol also appears in the display.",
+      "dst": "Se o controlador detecta um mau [...] funcionamento, o LED vermelho pisca e o símbolo [...] de aviso também aparece-se no ecrã.",
+      "url": "http://www.sorel.de/fileadmin/user_upload/pdf/tdc_mb2010/TDC4-5L_englisch102374SOREL.pdf"
+    },
+    {
+      "id": "",
+      "src": "All recommended improvements are currently being [...] implemented: information is being provided on [...] the meaning of the red banner on the screen [...] and to end-users so that they know what [...] to do when the system refuses a query if the \"first name\" field is not filled in.",
+      "dst": "Todas as melhorias recomendadas estão a ser implementadas: estão a [...] ser prestadas informações sobre o [...] significado da bandeira vermelha no ecrã e os utilizadores [...] finais são informados sobre o [...] que devem fazer caso o sistema recuse uma consulta se o campo \"nome\" não estiver preenchido.",
+      "url": "http://europa.eu/rapid/pressReleasesAction.do?reference=PRES/07/253&format=HTML&aged=1&language=EN&guiLanguage=en"
+    },
+    {
+      "id": "",
+      "src": "I mean, if a man is caught red-handed stealing a purse from an older woman, beating her mercilessly in order to steal it, imagine this man standing before the judge and the judge says, \"Oh, no big deal.",
+      "dst": "Ou seja, se um homem é pego em flagrante, roubando a bolsa de uma senhora, espancando ela sem dó a fim de roubá-la, imagine esse homem se apresentando diante do juiz e o juiz dizendo: \"Ah, não tem problema.",
+      "url": "http://www.fbchenderson.org/TheBestDealEver.html"
+    },
+    {
+      "id": "",
+      "src": "The blossoms [...] are covered with red tube shaped flowers.",
+      "dst": "As inflorescências [...] são cheias de flores vermelhas tubulosas.",
+      "url": "http://www.madeiranature.com/index/cms/page/-/page/nature_flora_introduced_ornamental/lang/en/articleId/171/articleTitle/kranz-aloe"
+    },
+    {
+      "id": "",
+      "src": "an aromatized drink obtained exclusively from red or white wine, flavoured mainly with cinnamon and/or cloves",
+      "dst": "A bebida aromatizada obtida exclusivamente a [...] partir de vinho tinto ou vinho branco, aromatizada principalmente com canela e/ou cravo-de-cabecinha.",
+      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=COM:2007:0848:FIN:EN:PDF"
+    },
+    {
+      "id": "",
+      "src": "You have to switch the function \"Highlight filter\" on, to mark all events that use [...] filter settings your team complies to in green and all events that use filter setting that [...] your team does not match in red.",
+      "dst": "Se seleccionares a opção \"Sublinhar filtro\", os eventos que usem filtros com requisitos que a tua [...] equipa cumpre serão marcados a verde, e os que tiverem requisitos que a tua equipa não [...] cumpre serão marcados a vermelho.",
+      "url": "http://wiki.manager-football.org/vi/news/general"
+    },
+    {
+      "id": "",
+      "src": "1/2 a red pepper, boiled until soft and [...] then cut into long thin strips",
+      "dst": "1/2 pimentão vermelho, cozido até ficar [...] macio e então cortado em tiras longas",
+      "url": "http://www.clic.es/en/sevilla-paella-recipe.html"
+    },
+    {
+      "id": "",
+      "src": "Today, there are clifferen railroad gauges, loss of time and money with transshipments, excessive red tape at borders, lack of regular ship lines, poorly conserves roads and few alternatives for going from one country to another.",
+      "dst": "Agora temos diferentes bitolas ferroviárias, perdas de tempo e de dinheiro com transbordos, excesso de burocracia nas fronteiras, falta de linhas regulares de navegação, estradas mal conservadas e poucas alternativas de passagem de um país a outro.",
+      "url": "http://en.braudel.org.br/publications/braudel-papers/downloads/ingles/bp19_en.pdf"
+    },
+    {
+      "id": "",
+      "src": "As if on cue, a bright red cardinal appears at [...] the bird feeder.",
+      "dst": "Como uma [...] sinal, um cardeal vermelho aparece no alimentador [...] de pássaros.",
+      "url": "http://www.avatarepc.com/html/Pillar1-Attn-Eng.pdf"
+    },
+    {
+      "id": "",
+      "src": "The lib is whitish and red veined with prominent [...] keels in the diskal part.",
+      "dst": "Seu labelo é esbranquiçado [...] estriado de vermelho e quilhas salientes [...] na parte discal.",
+      "url": "http://delfinadearaujo.com/on/on35/orquideasrio/orqrioeng.html"
+    },
+    {
+      "id": "",
+      "src": "It claims that it is safe and [...] it creates big red mud tailings ponds.",
+      "dst": "Afirma que é seguro e cria grandes [...] bacias de rejeitos de lama vermelha.",
+      "url": "http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+CRE+20050905+ITEMS+DOC+XML+V0//EN&amp;language=EN"
+    },
+    {
+      "id": "",
+      "src": "The end result of this blend of Touriga Nacional produced at Quinta Nova [...] and Pinotage from [...] Bottlerary Hills was a red wine with a deep, intense, ruby-red colour, a forthcoming [...] nose showing aromas [...] of French oak and cedar, complemented by spicy black fruits.",
+      "dst": "O resultado final deste lote, elaborado a partir de Touriga Nacional, produzido na Quinta Nova, e [...] Pinotage de Bottlerary [...] Hills, traduziu-se num vinho tinto com uma cor rubi escura, intensa e um [...] nariz com aromas de carvalho [...] francês e cedro, complementado por frutos negros com sabor a especiarias.",
+      "url": "http://www.amorim.pt/xms/files/Grupo_Amorim/Jornal_Amorim_News/en/ANL_ING_4_2006.pdf"
+    },
+    {
+      "id": "",
+      "src": "An Italian doctor working at a Red Cross facility recognized [...] Jawad's potential and arranged a series of clandestine tutors for him.",
+      "dst": "Um médico italiano que [...] trabalhava no escritório da Cruz Vermelha reconheceu [...] o potencial de Jawad e conseguiu vários professores clandestinos para ele.",
+      "url": "http://www.america.gov/media/pdf/ejs/ijse1105.pdf"
+    },
+    {
+      "id": "",
+      "src": "The connection that provides a permanent supply of air to [...] the trailer is marked red and the brake connection [...] that controls the braking operation [...] in the trailer is marked yellow.",
+      "dst": "A conexão que fornece um suprimento permanente de ar para o [...] trailer é marcada em vermelha e a conexão do freio [...] que controla a operação de frenagem [...] no trailer é marcada de amarelo.",
+      "url": "http://mahle-aftermarket.com/C12570B3006C0D49/CurrentBaseLink/W26TFGTL401MARSEN"
+    },
+    {
+      "id": "",
+      "src": "Visible red light allows fast [...] and simple alignment.",
+      "dst": "A luz vermelha permite um alinhamento [...] simples e rápido.",
+      "url": "http://ifm.fi/ifmgb/news/opto-family-o7---small-compact-precise.htm"
+    },
+    {
+      "id": "",
+      "src": "On the page of the event's [...] details a click on the \"red X\" or the \"green checkmark\" [...] besides \"Filter\" will display the set requirements.",
+      "dst": "Na página de detalhes do evento [...] carregar no no \"X vermelho\" ou no \"visto verde\" [...] ao lado de \"Filtro\" mostrará os requisitos.",
+      "url": "http://wiki.manager-football.org/vi/news/general"
+    }
+  ]
+}

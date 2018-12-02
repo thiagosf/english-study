@@ -16,7 +16,7 @@ class OxfordDicionary
         "app_key: {$settings['OXFORD_APP_KEY']}",
       ];
       $language = 'en';
-      $url = "https://od-api.oxforddictionaries.com/api/v1/entries/{$language}/{$word}";
+      $url = "https://od-api.oxforddictionaries.com/api/v1/entries/{$language}/{$word}/regions=us";
       $curl = curl_init($url);
       curl_setopt($curl, CURLOPT_URL, $url);
       curl_setopt($curl, CURLOPT_HTTPHEADER, $auth);
@@ -42,10 +42,12 @@ class OxfordDicionary
           $audios = [];
           if (!empty($entries->pronunciations)) {
             foreach ($entries->pronunciations as $audio) {
-              $audios[] = [
-                'url' => $audio->audioFile,
-                'phonetic' => $audio->phoneticSpelling,
-              ];
+              if (!empty($audio->audioFile)) {
+                $audios[] = [
+                  'url' => $audio->audioFile,
+                  'phonetic' => $audio->phoneticSpelling,
+                ];
+              }
             }
           }
           if (!empty($entries->entries)) {
@@ -72,6 +74,7 @@ class OxfordDicionary
             'type' => $type,
             'audios' => $audios,
             'items' => $items,
+            'reference' => "https://en.oxforddictionaries.com/definition/{$item->word}",
           ];
         }
       }

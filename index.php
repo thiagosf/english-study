@@ -47,6 +47,7 @@
   </div>
   <script id="word-item" type="x-tmpl-mustache">
     <h2>{{word}}</h2>
+    <a href="#" class="remove">x</a>
     {{#definitions.length}}
       <div class="info">
         <ul class="definitions">
@@ -79,9 +80,15 @@
                   {{/audios}}
                 </ul>
               {{/audios.length}}
+              <a class="reference" href="{{{reference}}}" target="_blank">reference</a>
             </li>
           {{/definitions}}
         </ul>
+      </div>
+    {{/definitions.length}}
+    {{^definitions.length}}
+      <div class="info">
+        <p>ops, not found</p>
       </div>
     {{/definitions.length}}
   </script>
@@ -90,16 +97,17 @@
       {{#audios}}
         <li>
           <audio controls>
-            <source src="{{{.}}}">
+            <source src="{{{url}}}">
           </audio>
+          <small class="name">{{name}}</small>
+          <a class="download" href="{{{url}}}" download="{{{url}}}">download</a>
         </li>
       {{/audios}}
     </ul>
   </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/mustache.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+  <script src="js/jquery.mark.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

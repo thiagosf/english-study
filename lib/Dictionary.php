@@ -7,7 +7,7 @@ require_once('OxfordDicionary.php');
 class Dictionary
 {
   public function __construct ($word, $engine, $settings) {
-    $this->word = $word;
+    $this->word = Utils::singularize($word);
     $this->engine = $engine;
     $this->settings = $settings;
   }

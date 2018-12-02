@@ -13,6 +13,7 @@
   --color-dark-blue-gray: #90A4AE;
   --color-gray: #777;
   --color-red: #F44336;
+  --color-green: #4CAF50;
   --wrapper-padding: 20px;
 }
 
@@ -56,6 +57,12 @@ body {
 }
 .main-aside > .wrapper {
   padding: var(--wrapper-padding);
+  position: sticky;
+  overflow-x: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
 }
 .main-aside .main-title {
   margin: 0 0 20px 0;
@@ -73,7 +80,9 @@ body {
   padding: 0 0 10px 0;
   border-bottom: 1px solid;
 }
-.word { }
+.word {
+  position: relative;
+}
 .word.is-error {
   color: var(--color-red);
 }
@@ -93,6 +102,9 @@ body {
   border-top-color: transparent;
   display: block;
   animation: rotateMe 500ms forwards infinite linear;
+}
+.word.is-loading .remove {
+  display: none;
 }
 .word.is-expanded h2::before {
   border-color: currentColor transparent transparent transparent;
@@ -124,6 +136,32 @@ body {
   margin-bottom: 20px;
   border-left: 5px solid;
   padding-left: 10px;
+}
+.word .remove {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  text-decoration: none;
+  color: transparent;
+  font-size: 18px;
+  background: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+.word .remove::after,
+.word .remove::before {
+  transform: rotate(45deg);
+  width: 4px;
+  height: 15px;
+  background: var(--color-red);
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 8px;
+}
+.word .remove::before {
+  transform: rotate(-45deg);
 }
 .word .info .type {
   margin: 0 0 10px 0;
@@ -167,6 +205,10 @@ body {
 }
 .word .info .audios li span {
   font-size: 22px;
+}
+.word .info .reference {
+  font-style: italic;
+  color: var(--color-green);
 }
 
 /* ===== */
@@ -288,6 +330,9 @@ body {
 .html-link ol li {
   list-style: decimal;
 }
+.html-link mark {
+  cursor: pointer;
+}
 
 /* ===== */
 /* html audios */
@@ -301,9 +346,11 @@ body {
 .html-audios > .wrapper {
   padding: var(--wrapper-padding);
   position: sticky;
+  overflow-x: auto;
   top: 0;
   left: 0;
   right: 0;
+  height: 100vh;
 }
 .html-audios h2 {
   text-transform: uppercase;
@@ -318,6 +365,24 @@ body {
 .html-audios li audio {
   width: 100%;
   display: block;
+}
+.html-audios li .name {
+  display: block;
+  word-break: break-all;
+  margin: 5px 0;
+  font-style: italic;
+  font-size: 12px;
+}
+.html-audios li .download {
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  background: transparent;
+  text-decoration: none;
+  color: black;
 }
 
 /* ===== */

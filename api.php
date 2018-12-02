@@ -1,5 +1,6 @@
 <?php
 
+require_once('lib/Utils.php');
 require_once('lib/ApiResponse.php');
 require_once('lib/Dictionary.php');
 require_once('lib/Scrap.php');

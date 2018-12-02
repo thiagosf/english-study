@@ -10,38 +10,42 @@ $(function () {
     $('.html-link').click(function(e) {
       if (!e.isDefaultPrevented()) {
         s = window.getSelection()
-        var range = s.getRangeAt(0)
-        var node = s.anchorNode
-        var increment = 1
-        try {
-          while (range.toString().indexOf(' ') != 0) {
-            var index = (range.startOffset - 1)
-            if (index === -1) {
-              increment = 0
+        if (s.anchorNode) {
+          var range = s.getRangeAt(0)
+          if (range.startOffset === range.endOffset) {
+            var node = s.anchorNode
+            var increment = 1
+            try {
+              while (range.toString().indexOf(' ') != 0) {
+                var index = (range.startOffset - 1)
+                if (index === -1) {
+                  increment = 0
+                }
+                range.setStart(node, index)
+              }
+            } catch (error) {
+              //
             }
-            range.setStart(node, index)
+            range.setStart(node, range.startOffset + increment)
+            try {
+              do {
+                range.setEnd(node, range.endOffset + 1)
+              } while (range.toString().indexOf(' ') == -1 && range.toString().trim() != '')
+            } catch (error) {
+              //
+            }
           }
-        } catch (error) {
-          //
+          var str = range.toString().trim()
+          s.removeAllRanges()
+          addWord(str)
         }
-        range.setStart(node, range.startOffset + increment)
-        try {
-          do {
-            range.setEnd(node, range.endOffset + 1)
-          } while (range.toString().indexOf(' ') == -1 && range.toString().trim() != '')
-        } catch (error) {
-          //
-        }
-        var str = range.toString().trim()
-        addWord(str)
       }
     })
   }
 
   function addWord (word) {
     if (word) {
-      word = word.toLowerCase()
-      word = word.replace(/(,|\.|;|"|\)|])/ig, ' ').trim()
+      word = normalizeWord(word)
       if (isNaN(+word)) {
         if (words.indexOf(word) === -1) {
           words.push(word)
@@ -99,7 +103,7 @@ $(function () {
 
   function search (word, callback) {
     $.ajax({
-      url: '/api.php',
+      url: 'api.php',
       data: {
         method: 'dictionary',
         mock: mock,
@@ -118,7 +122,7 @@ $(function () {
     e.preventDefault()
     formEl.addClass('is-loading')
     $.ajax({
-      url: '/api.php',
+      url: 'api.php',
       data: {
         method: 'scrap',
         mock: mock,
@@ -142,13 +146,30 @@ $(function () {
 
   function addAudios (audios) {
     var template = $('#audios').html()
-    var rendered = Mustache.render(template, { audios: audios })
+    var rendered = Mustache.render(template, {
+      audios: audios.map(function (audio) {
+        return {
+          url: audio,
+          name: audio.split('/').pop()
+        }
+      })
+    })
     audiosEl.html(rendered)
   }
 
-  function removeWord (e) {
+  function removeWordMark (e) {
     e.preventDefault()
-    var word = e.target.innerText.toLowerCase().trim()
+    removeWord(e.target.innerText)
+  }
+
+  function removeWordLink (e) {
+    e.preventDefault()
+    var word = $(e.target).closest('li').find('h2').text()
+    removeWord(word)
+  }
+
+  function removeWord (word) {
+    word = normalizeWord(word)
     var index = words.indexOf(word)
     if (index > -1) {
       words.splice(index, 1)
@@ -159,16 +180,38 @@ $(function () {
 
   function addEvents () {
     wordsEl.on('click', 'li h2', wordClick)
+    wordsEl.on('click', 'li .remove', removeWordLink)
     formEl.on('submit', formSubmit)
-    htmlLinkEl.on('click', 'mark', removeWord)
+    htmlLinkEl.on('click', 'mark', removeWordMark)
   }
 
-  function markWords () {
+  function markWords (word) {
     htmlLinkEl.unmark({
       done: function() {
-        htmlLinkEl.mark(words)
+        var punctuations = ":;.,-–—‒_(){}[]!'\"+=".split('')
+        if (word) {
+          mark = word
+        } else {
+          mark = []
+          for (var i in punctuations) {
+            for (var k in words) {
+              mark.push(words[k])
+              mark.push(words[k] + punctuations[i])
+            }
+          }
+        }
+        htmlLinkEl.mark(mark, {
+          accuracy: 'exactly',
+          ignorePunctuation: punctuations
+        })
       }
     })
+  }
+
+  function normalizeWord (word) {
+    word = word.toLowerCase()
+    word = word.replace(/(,|\.|;|:|!|"|\)|])/ig, ' ').trim()
+    return word
   }
 
   addEvents()

@@ -4,22 +4,37 @@ namespace EnglishStudy;
 
 class OxfordDicionary
 {
-  static public function search ($word) {
+  static public function search ($word, $settings) {
     $content = null;
-    if ($_GET['mock']) {
+    if ($_GET['mock'] === 'true') {
       $content = file_get_contents('fixtures/oxford.json');
       $content = json_decode($content);
-      $content = self::formatOutput($content);
     } else {
-      // api call...
+      $auth = [
+        'Accept: application/json',
+        "app_id: {$settings['OXFORD_APP_ID']}",
+        "app_key: {$settings['OXFORD_APP_KEY']}",
+      ];
+      $language = 'en';
+      $url = "https://od-api.oxforddictionaries.com/api/v1/entries/{$language}/{$word}";
+      $curl = curl_init($url);
+      curl_setopt($curl, CURLOPT_URL, $url);
+      curl_setopt($curl, CURLOPT_HTTPHEADER, $auth);
+      curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+      $content  = curl_exec($curl);
+      curl_close($curl);
+      try {
+        $content = json_decode($content);
+      } catch (\Exception $e) {
+        //
+      }
     }
-    return $content;
+    return self::formatOutput($content);
   }
 
   static public function formatOutput ($content) {
     $output = [];
-    // $output[] = $content;
-    if ($content->results) {
+    if ($content && $content->results) {
       foreach ($content->results as $item) {
         foreach ($item->lexicalEntries as $entries) {
           $items = [];

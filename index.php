@@ -19,26 +19,29 @@
     </aside>
     <main class="main-content">
       <form action="#" class="form-link">
-        <input type="text" placeholder="Paste url to catch content">
+        <input type="text" placeholder="Paste url to catch content" name="url">
         <button type="submit">
           <span>Go</span>
         </button>
       </form>
       <div class="wrapper">
         <div class="html-link">
-          <?php // echo file_get_contents('fixtures/manythings.html') ?>
+          <h3>How it works:</h3>
+          <ol>
+            <li>You paste a url in above form</li>
+            <li>We catch the content of url</li>
+            <li>We catch the audios of content</li>
+            <li>You listen the audio and read the content</li>
+            <li>You click in the words to check definition and understand the content better</li>
+          </ol>
+          <p>Enjoy! 🚀</p>
         </div>
       </div>
     </main>
     <aside class="html-audios">
       <div class="wrapper">
-        <ul>
-          <!-- <li>
-            <audio controls>
-              <source src="http://www.archive.org/download/AmericanStories/The_Boarded_Window_-_By_Ambrose_Bierce.mp3">
-            </audio>
-          </li> -->
-        </ul>
+        <h2>Audios</h2>
+        <ul></ul>
       </div>
     </aside>
   </div>
@@ -69,7 +72,7 @@
                   {{#audios}}
                     <li>
                       <audio controls>
-                        <source src="{{url}}">
+                        <source src="{{{url}}}">
                       </audio>
                       <span>{{phonetic}}</span>
                     </li>
@@ -87,7 +90,7 @@
       {{#audios}}
         <li>
           <audio controls>
-            <source src="{{.}}">
+            <source src="{{{.}}}">
           </audio>
         </li>
       {{/audios}}
@@ -95,6 +98,8 @@
   </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/mustache.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

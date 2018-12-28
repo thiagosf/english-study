@@ -23,3 +23,12 @@ Init php server:
 ```
 
 Access link [http://localhost:8080](http://localhost:8080)
+
+## TODO
+
+- [x] Remove styles and classes of html scrapped
+- [x] Read audio files in whole html content
+- [ ] Responsive rules
+- [ ] Improvements in tags in html-link (like hr, ul, code, pre, etc)
+- [ ] Avoid horizontal scroll
+- [ ] If text selection is large, do not add in words list

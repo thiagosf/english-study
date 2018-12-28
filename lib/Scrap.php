@@ -11,20 +11,29 @@ class Scrap
   function getHTML () {
     if ($_GET['mock'] === 'true') {
       $html = file_get_contents('fixtures/manythings.html');
-      return ['html' => $html, 'audios' => $this->getAudios($html)];
+      return ['html' => $this->cleanHtml($html), 'audios' => $this->getAudios($html)];
     } else {
       ini_set('display_errors', 'Off');
       error_reporting(0);
       $dom = new \DOMDocument();
       $dom->loadhtmlfile($this->url);
+      $html = $dom->savehtml();
       $body = $dom->getElementsByTagName('body');
       $body = $body->item(0);
       $body = $dom->savehtml($body);
-      $body = str_replace(array('<body>', '</body>'), '', $body);
-      $body = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $body);
-      $body = preg_replace('#<!--([^-->]+)-->#is', '', $body);
-      return ['html' => $body, 'audios' => $this->getAudios($body)];
+      return ['html' => $this->cleanHtml($body), 'audios' => $this->getAudios($html)];
     }
+  }
+
+  function cleanHtml ($html) {
+    $html = str_replace(array('<body>', '</body>'), '', $html);
+    $html = preg_replace('#<link(.*?)>#is', '', $html);
+    $html = preg_replace('#<link(.*?)>(.*?)</link>#is', '', $html);
+    $html = preg_replace('#<style(.*?)>(.*?)</style>#is', '', $html);
+    $html = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $html);
+    $html = preg_replace('#<!--([^-->]+)-->#im', '', $html); // @todo: fix this
+    $html = preg_replace('#style\s*=\s*"?\'?[^\"?\'?]+\"?\'?#im', '', $html);
+    return $html;
   }
 
   function getAudios ($html) {
@@ -33,9 +42,11 @@ class Scrap
     if (preg_match_all($pattern, $html, $matches)) {
       $audios = $matches[1];
       $audios = array_unique($audios);
-      $audios = array_map(function ($audio) {
-        return $this->getRealUrl($audio);
-      }, $audios);
+      if ($_GET['mock'] !== 'true') {
+        $audios = array_map(function ($audio) {
+          return $this->getRealUrl($audio);
+        }, $audios);
+      }
     }
     return $audios;
   }

@@ -210,7 +210,7 @@ $(function () {
 
   function normalizeWord (word) {
     word = word.toLowerCase()
-    word = word.replace(/(,|\.|;|:|!|"|\)|])/ig, ' ').trim()
+    word = word.replace(/(,|\.|;|:|!|"|\)|\]|“|”)/ig, ' ').trim()
     return word
   }
 

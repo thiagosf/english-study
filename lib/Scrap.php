@@ -38,7 +38,7 @@ class Scrap
 
   function getAudios ($html) {
     $audios = [];
-    $pattern = '/(https?:\/\/[^"\']+\.mp3)/im';
+    $pattern = '/(https?:\/\/[^"\']+\.(mp3|m4a))/im';
     if (preg_match_all($pattern, $html, $matches)) {
       $audios = $matches[1];
       $audios = array_unique($audios);

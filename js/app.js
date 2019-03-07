@@ -5,6 +5,8 @@ $(function () {
   var formEl = $('.form-link')
   var htmlLinkEl = $('.html-link')
   var audiosEl = $('.html-audios ul')
+  var currentAudio = null
+  var P_KEY = 80
 
   function enableClickContent () {
     $('.html-link').click(function(e) {
@@ -155,6 +157,15 @@ $(function () {
       })
     })
     audiosEl.html(rendered)
+
+    audiosEl.find('audio').each(function (index, item) {
+      if (index === 0) {
+        currentAudio = item
+      }
+      item.onplay = function (event) {
+        currentAudio = item
+      }
+    })
   }
 
   function removeWordMark (e) {
@@ -214,6 +225,32 @@ $(function () {
     return word
   }
 
+  function addPlayPauseControl () {
+    $(document).on('keyup', function (event) {
+      if (event.target.tagName !== 'INPUT') {
+        if (parseInt(event.which) === P_KEY) {
+          playOrPauseCurrentlyAudio()
+        }
+      }
+    })
+  }
+
+  function getCurrentlyPlayingAudio () {
+    return currentAudio
+  }
+
+  function playOrPauseCurrentlyAudio () {
+    var audio = getCurrentlyPlayingAudio()
+    if (audio) {
+      if (audio.paused) {
+        audio.play()
+      } else {
+        audio.pause()
+      }
+    }
+  }
+
   addEvents()
   enableClickContent()
+  addPlayPauseControl()
 })

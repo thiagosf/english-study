@@ -41,6 +41,7 @@
     <aside class="html-audios">
       <div class="wrapper">
         <h2>Audios</h2>
+        <p>Press <code>P</code> to play/pause.</p>
         <ul></ul>
       </div>
     </aside>

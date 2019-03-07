@@ -33,6 +33,8 @@ class Scrap
     $html = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $html);
     $html = preg_replace('#<!--([^-->]+)-->#im', '', $html); // @todo: fix this
     $html = preg_replace('#style\s*=\s*"?\'?[^\"?\'?]+\"?\'?#im', '', $html);
+    $html = preg_replace('#class\s*=\s*"?\'?[^\"?\'?]+\"?\'?#im', '', $html);
+    $html = preg_replace('#id\s*=\s*"?\'?[^\"?\'?]+\"?\'?#im', '', $html);
     return $html;
   }
 

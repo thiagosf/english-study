@@ -15,8 +15,8 @@ class OxfordDicionary
         "app_id: {$settings['OXFORD_APP_ID']}",
         "app_key: {$settings['OXFORD_APP_KEY']}",
       ];
-      $language = 'en';
-      $url = "https://od-api.oxforddictionaries.com:443/api/v2/entries/{$language}/{$word}";
+      $language = 'en-gb';
+      $url = "https://od-api.oxforddictionaries.com/api/v2/entries/{$language}/{$word}";
       $curl = curl_init($url);
       curl_setopt($curl, CURLOPT_URL, $url);
       curl_setopt($curl, CURLOPT_HTTPHEADER, $auth);

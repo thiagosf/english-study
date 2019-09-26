@@ -54,7 +54,7 @@
         <ul class="definitions">
           {{#definitions}}
             <li>
-              <p class="type">{{type}}</p>
+              <p class="type">{{type.text}}</p>
               <ul class="items">
                 {{#items}}
                   <li>

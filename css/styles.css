@@ -292,7 +292,7 @@ body {
 
 .html-link {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
 }
 .html-link img {
   max-width: 100%;
@@ -309,15 +309,14 @@ body {
 .html-link h5,
 .html-link h6 {
   font-family: var(--font-base);
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
-.html-link h1 { font-size: 48px; }
-.html-link h2 { font-size: 36px; }
-.html-link h3 { font-size: 24px; }
-.html-link h4 { font-size: 20px; }
-.html-link h5 { font-size: 18px; }
-.html-link h6 { font-size: 16px; }
+.html-link h1 { font-size: 34px; }
+.html-link h2 { font-size: 32px; }
+.html-link h3 { font-size: 30px; }
+.html-link h4 { font-size: 28px; }
+.html-link h5 { font-size: 26px; }
+.html-link h6 { font-size: 24px; }
 .html-link blockquote,
 .html-link quote {
   padding: 0 20px;

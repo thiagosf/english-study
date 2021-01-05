@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>English Study</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link href="/favicon.ico" rel="shortcut icon" />
+  <link href="favicon.ico" rel="shortcut icon" />
 </head>
 <body>
   <div class="page">

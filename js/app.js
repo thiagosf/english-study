@@ -131,11 +131,14 @@ $(function () {
         url: formEl.find('input').val()
       },
       success: function (result) {
-        try {
-          htmlLinkEl.html(result.data.html)
-          addAudios(result.data.audios)
-        } catch (error) {
-          console.log(error)
+        if (result.success) {
+          try {
+            htmlLinkEl.html(result.data.html)
+            addAudios(result.data.audios)
+            window.location.search = '?u=' + result.data.__key__
+          } catch (error) {
+            console.log(error)
+          }
         }
         formEl.removeClass('is-loading')
       },
@@ -250,7 +253,39 @@ $(function () {
     }
   }
 
+  function checkURLHash () {
+    var urlHash = window.location.search.split('?u=').pop()
+    if (urlHash) {
+      urlHash = urlHash.substring(0, 32)
+      $.ajax({
+        url: 'api.php',
+        data: {
+          method: 'scrap',
+          mock: mock,
+          url_hash: urlHash
+        },
+        success: function (result) {
+          if (result.success) {
+            try {
+              htmlLinkEl.html(result.data.html)
+              addAudios(result.data.audios)
+              formEl.find('input').val(result.data.url)
+            } catch (error) {
+              console.log(error)
+            }
+          }
+          formEl.removeClass('is-loading')
+        },
+        error: function (error) {
+          console.log(error)
+          formEl.removeClass('is-loading')
+        }
+      })
+    }
+  }
+
   addEvents()
   enableClickContent()
   addPlayPauseControl()
+  checkURLHash()
 })

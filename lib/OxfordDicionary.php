@@ -52,6 +52,14 @@ class OxfordDicionary
           }
           if (!empty($entries->entries)) {
             foreach ($entries->entries as $entry) {
+              foreach ($entry->pronunciations as $audio) {
+                if (!empty($audio->audioFile)) {
+                  $audios[] = [
+                    'url' => $audio->audioFile,
+                    'phonetic' => $audio->phoneticSpelling,
+                  ];
+                }
+              }
               foreach ($entry->senses as $sense) {
                 $definition = '';
                 $examples = [];

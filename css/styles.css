@@ -6,6 +6,7 @@
   --font-base: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   --font-serif: Georgia, serif;
   --color-black: black;
+  --color-white: white;
   --color-blue: #2196F3;
   --color-purple: #673AB7;
   --color-light-blue-gray: #ECEFF1;
@@ -14,6 +15,7 @@
   --color-gray: #777;
   --color-red: #F44336;
   --color-green: #4CAF50;
+  --gradient-green-purple: linear-gradient(-10deg, var(--color-green), var(--color-purple));
   --wrapper-padding: 20px;
 }
 
@@ -27,6 +29,13 @@
 body {
   font-family: var(--font-base);
   color: var(--color-black);
+}
+
+hr {
+  margin: 20px 0;
+  height: 1px;
+  background: var(--color-light-blue-gray);
+  border: 0;
 }
 
 /* ===== */
@@ -66,8 +75,17 @@ body {
 }
 .main-aside .main-title {
   margin: 0 0 20px 0;
-  text-transform: uppercase;
-  font-size: 16px;
+  text-transform: lowercase;
+  font-size: 24px;
+  background: var(--gradient-green-purple);
+  border-radius: 3px;
+  padding: 0 15px;
+  height: 48px;
+  display: flex;
+  color: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
 }
 .main-aside .start-tip {
   margin: -10px 0 20px 0;

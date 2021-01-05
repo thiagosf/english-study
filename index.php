@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>English Study</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
   <div class="page">
@@ -35,6 +36,12 @@
             <li>You click in the words to check definition and understand the content better</li>
           </ol>
           <p>Enjoy! 🚀</p>
+          <hr />
+          <h4>Are you a dev?</h4>
+          <p>Yehh 🤘! So, give a look in this code and help me to get better if you want:</p>
+          <p>
+            <a target="_blank" href="https://github.com/thiagosf/english-study">https://github.com/thiagosf/english-study</a>
+          </p>
         </div>
       </div>
     </main>
@@ -101,7 +108,7 @@
             <source src="{{{url}}}">
           </audio>
           <small class="name">{{name}}</small>
-          <a class="download" href="{{{url}}}" download="{{{url}}}">download</a>
+          <a class="download" href="{{{url}}}" download="{{{url}}}" target="_blank">download</a>
         </li>
       {{/audios}}
     </ul>

@@ -6,6 +6,10 @@ class Cache
 {
   static function fetch ($options) {
     $key = md5(json_encode($options));
+    return self::fetchByKey($key);
+  }
+
+  static function fetchByKey ($key) {
     if (self::hasCache($key)) {
       return self::readCache($key);
     }
@@ -25,7 +29,9 @@ class Cache
 
   static function readCache ($key) {
     $data = file_get_contents(self::tempPath($key));
-    return json_decode($data);
+    $object = json_decode($data);
+    $object->__key__ = $key;
+    return $object;
   }
 
   static function saveCache ($options, $data) {
@@ -33,5 +39,6 @@ class Cache
     $fp = fopen(self::tempPath($key), 'w');
     fwrite($fp, json_encode($data));
     fclose($fp);
+    return $key;
   }
 }

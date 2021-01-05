@@ -12,14 +12,24 @@ $output = null;
 switch ($_GET['method']) {
     case 'scrap':
         $url = $_GET['url'];
-        $options = ['url' => $url];
-        if ($data = EnglishStudy\Cache::fetch($options)) {
-          $output = ['success' => true, 'data' => $data];
-        } else {
-          $scrap = new EnglishStudy\Scrap($url);
-          $data = $scrap->getHTML();
-          EnglishStudy\Cache::saveCache($options, $data);
-          $output = ['success' => true, 'data' => $data];
+        $url_hash = $_GET['url_hash'];
+        if (!empty($url)) {
+          $options = ['url' => $url];
+          if ($data = EnglishStudy\Cache::fetch($options)) {
+            $output = ['success' => true, 'data' => $data];
+          } else {
+            $scrap = new EnglishStudy\Scrap($url);
+            $data = $scrap->getHTML();
+            $key = EnglishStudy\Cache::saveCache($options, $data);
+            $data['__key__'] = $key;
+            $output = ['success' => true, 'data' => $data];
+          }
+        } else if (!empty($url_hash)) {
+          if ($data = EnglishStudy\Cache::fetchByKey($url_hash)) {
+            $output = ['success' => true, 'data' => $data];
+          } else {
+            $output = ['success' => false];
+          }
         }
         break;
 

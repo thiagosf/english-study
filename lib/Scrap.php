@@ -21,7 +21,11 @@ class Scrap
       $body = $dom->getElementsByTagName('body');
       $body = $body->item(0);
       $body = $dom->savehtml($body);
-      return ['html' => $this->cleanHtml($body), 'audios' => $this->getAudios($html)];
+      return [
+        'url' => $this->url,
+        'html' => $this->cleanHtml($body),
+        'audios' => $this->getAudios($html)
+      ];
     }
   }
 
